@@ -83,7 +83,10 @@
   var group = T.구분 || "정규직";
   var perks = list(C.복지).filter(function (b) { return !b.대상 || b.대상 === "전체" || b.대상 === group; });
   h.push('<section id="benefits">' + head(C.복지_제목, C.복지_설명) + '<ul class="perks">');
-  perks.forEach(function (b) { h.push("<li><h3>" + fmt(b.이름) + "</h3><p>" + fmt(b.설명) + "</p></li>"); });
+  perks.forEach(function (b) {
+    h.push("<li>" + (b.아이콘 ? '<span class="perk-icon" aria-hidden="true">' + esc(b.아이콘) + "</span>" : "") +
+      "<h3>" + fmt(b.이름) + "</h3><p>" + fmt(b.설명) + "</p></li>");
+  });
   h.push("</ul></section>");
 
   // 준비물
