@@ -1,0 +1,34 @@
+/* 입사 전 안내사항 전용 스타일 (공통 스타일은 style.css) */
+.small-intro{font-size:15px;margin-top:10px}
+.mail{margin:14px 0 8px}
+.mail .act{display:inline-block}
+
+.jump{display:flex;gap:6px;flex-wrap:wrap;padding-top:16px;padding-bottom:4px;position:sticky;top:0;z-index:5;background:var(--bg)}
+.jump a{font-size:14px;font-weight:500;color:var(--sub);text-decoration:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+.jump a:hover{color:var(--ink);border-color:var(--ink)}
+html{scroll-padding-top:64px}
+
+#location .seq{margin-top:20px}
+.pics{display:grid;grid-template-columns:1fr 168px;gap:16px;margin-top:20px;align-items:start}
+.pics figure{margin:0}
+.pics img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line)}
+.pics figure:last-child img{aspect-ratio:3/4;object-fit:cover}
+.pics .cap{margin-top:6px}
+@media (max-width:520px){.pics{grid-template-columns:1fr}.pics figure:last-child{max-width:160px}}
+
+.perks{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.perks li{background:var(--fill);border-radius:6px;padding:16px 18px}
+.perks h3{font-size:16px;font-weight:700;line-height:1.4}
+.perks p{font-size:14px;color:var(--sub);margin-top:4px}
+@media (max-width:520px){.perks{grid-template-columns:1fr}}
+
+.checks{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--ink)}
+.checks li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--line);color:var(--sub)}
+.checks li::before{content:"";position:absolute;left:4px;top:21px;width:10px;height:5px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}
+
+.promo{border:1px solid var(--line);border-radius:6px;padding:24px 22px}
+.promo .promo-btn{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg)}
+.promo .promo-btn:hover{background:var(--accent)}
+
+.closing{margin-top:56px;padding:28px 0 56px;border-top:1px solid var(--line);font-size:15px;color:var(--sub)}
+.closing .bye{font-size:17px;font-weight:600;color:var(--ink);margin-bottom:4px}

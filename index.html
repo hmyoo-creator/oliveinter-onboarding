@@ -1,55 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>올리브인터내셔널 온보딩 가이드</title>
-<style>
-  :root{
-    --bg:#F7F2E3; --ink:#3B3A22; --ink-soft:#6E6C56; --line:#E3DCC0;
-    --olive:#3E4227; --card:#FFFFFF; --shadow:0 1px 2px rgba(59,58,34,0.06), 0 10px 26px rgba(59,58,34,0.08);
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
-    padding:64px 24px; line-height:1.6;
-  }
-  .wrap{ max-width:640px; margin:0 auto; }
-  h1{ font-size:1.7rem; margin:0 0 8px; }
-  p.sub{ color:var(--ink-soft); margin:0 0 40px; }
-  .grid{ display:grid; gap:16px; }
-  a.card{
-    display:block; background:var(--card); border:1px solid var(--line);
-    border-radius:16px; padding:20px 22px; text-decoration:none; color:var(--ink);
-    box-shadow:var(--shadow);
-  }
-  a.card .label{ font-weight:700; font-size:1.05rem; margin-bottom:4px; }
-  a.card .desc{ color:var(--ink-soft); font-size:0.9rem; }
-</style>
+<title>올리브인터내셔널 입사 전 안내사항</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <h1>🫒 올리브인터내셔널 온보딩 가이드</h1>
-    <p class="sub">고용형태와 근무제에 맞는 버전을 선택해주세요.</p>
-    <div class="grid">
-      <a class="card" href="/regular-flex">
-        <div class="label">정규직 · 시차출퇴근제 적용</div>
-        <div class="desc">정규직 채용, 시차출퇴근제(09:00~10:00, 30분 단위) 적용 부서용</div>
-      </a>
-      <a class="card" href="/regular-fixed">
-        <div class="label">정규직 · 시차출퇴근제 미적용</div>
-        <div class="desc">정규직 채용, 고정 근무시간 부서용</div>
-      </a>
-      <a class="card" href="/intern-flex">
-        <div class="label">인턴 · 계약직 · 시차출퇴근제 적용</div>
-        <div class="desc">인턴/계약직 채용, 시차출퇴근제 적용 부서용</div>
-      </a>
-      <a class="card" href="/intern-fixed">
-        <div class="label">인턴 · 계약직 · 시차출퇴근제 미적용</div>
-        <div class="desc">인턴/계약직 채용, 고정 근무시간 부서용</div>
-      </a>
-    </div>
+<div class="wrap">
+  <div class="top">
+    <img class="logo" src="assets/logo.png" alt="OLIVE INTERNATIONAL" width="451" height="150">
+    <h1 style="margin-top:28px">입사 전 안내사항</h1>
+    <p class="intro">고용형태와 근무제에 맞는 버전을 선택해주세요.</p>
   </div>
+  <nav class="home">
+    <a href="regular-flex/">정규직 · 시차출퇴근제 적용<span>정규직 채용, 시차출퇴근제(09:00~10:00, 30분 단위) 적용 부서용</span></a>
+    <a href="regular-fixed/">정규직 · 시차출퇴근제 미적용<span>정규직 채용, 고정 근무시간 부서용</span></a>
+    <a href="intern-flex/">인턴 · 계약직 · 시차출퇴근제 적용<span>인턴/계약직 채용, 시차출퇴근제 적용 부서용</span></a>
+    <a href="intern-fixed/">인턴 · 계약직 · 시차출퇴근제 미적용<span>인턴/계약직 채용, 고정 근무시간 부서용</span></a>
+  </nav>
+</div>
 </body>
 </html>
